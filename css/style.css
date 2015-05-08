@@ -6,47 +6,36 @@ body {
     padding:0;
 }
 
-.container {
-    position: relative;
-    width: 1100px;
-    margin: 0 auto;
-}
-
-header .container-inner {
-    margin-right: 50px;    
-}
-
 header {
     width: 100%;
+    max-width: 1200px;
     position: relative;
-    margin: 0px;
+    margin: 0px auto;
     z-index: 110;
     padding: 0px;
     
 }
 
-header .left {
-    position: absolute;
-    width: 49%;
-    top: 0;
-    left: 0;
-    z-index:50;
-    height:100px;
-    vertical-align: middle;
-    text-align:right;
+header nav ul {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: block;
+  background: 0 0;
+  list-style: none;
+  font-size:16px;
+  margin: 0px;
+  padding:0px;
 }
 
-header .right {
-    position: absolute;
-    width: 49%;
-    top:0;
-    right:0;
-    z-index:50;
-    height:100px;
-    vertical-align: middle;
-    text-align:left;
-    margin:0;
-    padding:0;
+header nav ul li {
+    display: block;
+  float: left;
+  line-height: 60px;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;    
 }
 
 header nav a {
@@ -57,21 +46,17 @@ header nav a {
     line-height: 100px;
 }
 
-header .logo {
-    position: relative;
-    width: 280px;
-    height: 100px;
-    background-color: green;
-    top: 0;
-    margin: auto;
+header .logo a {
+    padding: 13px 0;
 }
 
-header nav.right a:first-child {
-    margin-left: 115px;
-}
-
-header nav.left a:last-child {
-    margin-right: 165px;
+header .logo a img {
+    width: 75%;
+    max-width: 250px;
+    border: none;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
 }
 
 .main {
